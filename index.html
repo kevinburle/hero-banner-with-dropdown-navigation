@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- navbar -->
+      <nav class="navbar">
+        <section class="nav-center">
+          <img src="./images/logo.svg" alt="logo" />
+          <img src="./images/icon-menu.svg" class="toggle-btn" alt="menu" />
+
+          <!-- sidebar -->
+          <sidebar class="sidebar">
+            <header class="sidebar-header">
+              <img
+                src="./images/icon-close-menu.svg"
+                class="close-btn"
+                alt="close menu"
+              />
+            </header>
+
+            <!-- links -->
+            <ul class="nav-links">
+              <!-- first dropdown -->
+              <li>
+                <!-- main link -->
+                <a class="nav-link main" href="#"
+                  >features
+                  <button class="arrow-btn">
+                    <img
+                      src="./images/icon-arrow-down.svg"
+                      class="arrow-down arrow"
+                      alt=""
+                    />
+                    <img
+                      src="./images/icon-arrow-up.svg"
+                      class="arrow-up arrow"
+                      alt=""
+                    />
+                  </button>
+                </a>
+                <!-- end of main link -->
+                <ul class="nav-links-dropdown">
+                  <li>
+                    <img src="./images/icon-todo.svg" alt="todo" /><a
+                      class="nav-link dropdown"
+                      href="#"
+                      >todo list</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./images/icon-calendar.svg" alt="calendar" /><a
+                      class="nav-link dropdown"
+                      href="#"
+                      >calendar</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./images/icon-reminders.svg" alt="reminders" /><a
+                      class="nav-link dropdown"
+                      href="#"
+                      >reminders</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./images/icon-planning.svg" alt="planning" /><a
+                      class="nav-link dropdown"
+                      href="#"
+                      >planning</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- end of first dropdown -->
+              <!-- second dropdown -->
+              <li>
+                <!-- main link -->
+                <a class="nav-link main" href="#"
+                  >Company
+                  <button class="arrow-btn">
+                    <img
+                      src="./images/icon-arrow-down.svg"
+                      class="arrow-down arrow"
+                      alt=""
+                    />
+                    <img
+                      src="./images/icon-arrow-up.svg"
+                      class="arrow-up arrow"
+                      alt=""
+                    />
+                  </button>
+                </a>
+                <!-- end of main link -->
+                <ul class="nav-links-dropdown">
+                  <li><a href="#" class="nav-link dropdown">history</a></li>
+                  <li><a href="#" class="nav-link dropdown">our team</a></li>
+                  <li><a href="#" class="nav-link dropdown">blog</a></li>
+                </ul>
+              </li>
+              <!-- end of second dropdown -->
+              <li><a class="nav-link main" href="#">careers</a></li>
+              <li><a class="nav-link main" href="#">about</a></li>
+            </ul>
+            <!-- end of links -->
+
+            <!-- button container -->
+            <div class="btn-container">
+              <button class="btn login">login</button>
+              <button class="btn register">Register</button>
+            </div>
+            <!-- end of button container -->
+          </sidebar>
+          <!-- end of sidebar -->
+        </section>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- hero -->
+      <section class="hero-banner">
+        <section class="section-center">
+          <figure class="banner-img">
+            <img
+              src="./images/image-hero-mobile.png"
+              alt="mobile banner"
+              class="mobile-image img"
+            />
+            <img
+              src="./images/image-hero-desktop.png"
+              alt="mobile banner"
+              class="desktop-image img"
+            />
+          </figure>
+          <article class="banner-presentation">
+            <h1 class="title">Make <span class="break">remote work</span></h1>
+            <p class="description">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn banner">Learn more</button>
+            <div class="logo-container">
+              <img src="./images/client-databiz.svg" alt="" />
+              <img src="./images/client-audiophile.svg" alt="" />
+              <img src="./images/client-meet.svg" alt="" />
+              <img src="./images/client-maker.svg" alt="" />
+            </div>
+          </article>
+        </section>
+      </section>
+      <!-- end of hero -->
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
